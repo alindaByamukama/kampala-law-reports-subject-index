@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite both this work and the original source compilation by Jolly Kibalama."
+title: "Kampala Law Reports Subject Index Dataset"
+abstract: "A structured, queryable dataset of Ugandan court case summaries (1989–1999), derived from the Kampala Law Reports Subject Index. Source materials compiled by Jolly Kibalama as part of his ongoing effort to make East African legal materials publicly accessible. This dataset is a structured derivative; the original compilation remains the canonical source."
+type: dataset
+authors:
+  - family-names: Byamukama
+    given-names: Alinda
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+keywords:
+  - Uganda
+  - case law
+  - Kampala Law Reports
+  - East African legal materials
+  - legal data
+  - legal NLP
+license: CC-BY-4.0
+repository-code: "https://github.com/alindaByamukama/kampala-law-reports-subject-index"
+references:
+  - type: data
+    title: "Kampala Law Reports - Subject Index (original Excel compilation)"
+    authors:
+      - family-names: Kibalama
+        given-names: Jolly
+    url: "https://drive.google.com/drive/folders/1F3G_nreQiXbeGEu0eHAp3kTO8y4Lpj3L?usp=drive_link"
