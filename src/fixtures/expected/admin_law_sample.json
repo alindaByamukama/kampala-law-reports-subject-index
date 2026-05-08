@@ -1,0 +1,53 @@
+{
+  "fixture": "admin_law_sample",
+  "cases": [
+    {
+      "case_id": "klr_0002",
+      "category": "Administrative Law",
+      "case_name": "Wyclief Kiggundu Kato Vs. Attorney General.",
+      "parties_first": "Wyclief Kiggundu Kato",
+      "parties_second": "Attorney General",
+      "case_type": "vs",
+      "year_start": 1992,
+      "year_end": 1992,
+      "volume": "I",
+      "court": "HCCS",
+      "page": 125,
+      "issue": "Appointment to and dismissal from public service - the nature of the contract.",
+      "holding": "Held: A cause of action is fact or combination of facts which give rise to a right of action.\n\nThe procedure to strike out a plaint is appropriate where it is obvious that the plaint is insufficient for the relief sought, unmaintainable and unarguable.\n\nPersons are employed in the Public Service by the President under A 104(1) of the Constitution which gives him the unfettered prerogative to dismiss and retire at pleasure, and in the public interest.\n\nR.36 of the Public Service Commission Regulations empowers a responsible officer, in this case the Permanent Secretary, to interdict an officer. The rule does not indicate any limitation on duration of the interdiction.\n\nThe presentation was required for purposes of rr.45(1) (a) and (b), and 48 (2) which avail the officer an opportunity to be heard. The plaintiff denied himself the right to be heard by refusal to make the presentation.\n\nThe retirement of the plaintiff was proper, and the plaint did not disclose a cause of action.",
+      "needs_review": false
+    },
+    {
+      "case_id": "klr_0003",
+      "category": "Administrative Law",
+      "case_name": "Uganda Engineering Corp. Ltd. Vs. Lugazi Town Council.",
+      "parties_first": "Uganda Engineering Corp. Ltd.",
+      "parties_second": "Lugazi Town Council",
+      "case_type": "vs",
+      "year_start": 1992,
+      "year_end": 1992,
+      "volume": "I",
+      "court": "HCCA",
+      "page": 171,
+      "issue": "Local authority whether local authority can levy rates beyond its rating area.",
+      "holding": "Held: The local authority could not levy rates beyond its rating area, however, whether the appellant company was within or without the ratable area was a question that would be proved by fresh evidence and therefore a retrial would be order in the valuation.\n\nA Government valuer has a statutory formula for rating hereditaments and once the formula is known, it is incumbent on him to show how he applied the particular formula to arrive at a given value.\n\nSince this was first appeal fresh evidence would not be allowed and therefore the production of maps to prove whether the appellant company was within a ratable would not be allowed.",
+      "needs_review": false
+    },
+    {
+      "case_id": "klr_0004",
+      "category": "Administrative Law",
+      "case_name": "Ontario Ltd Vs. Crispus Kiyonga & ars.",
+      "parties_first": "Ontario Ltd",
+      "parties_second": "Crispus Kiyonga & ars.",
+      "case_type": "vs",
+      "year_start": 1992,
+      "year_end": 1992,
+      "volume": "II",
+      "court": "HCCS",
+      "page": 14,
+      "issue": "Vicarious liability - whether government could be held liable for the action of a rebel movement that subsequently assumes power.",
+      "holding": "Held: Revolutionary movements are not legal entities until they assume power.\n\nThe Government was a wrong party to the suit because the movement was non-existent in law prior to its assumption of power. A non-existing entity cannot be a party to a contract thereby bind government.\n\nFor a contract to be binding, it must be between persons existing at the time the contract is made. \"The NRM interim Government\" did not exist in law at the time of the alleged contract. Therefore there was no valid concluded contract.\n\nThe NRM interim Government could not have acted as agent of the Government because the Government was not capable of entering into such a contract. An act which cannot be done by the principal cannot be done by him through an agent.\n\nThe contract was unenforceable for being illegal because it was made to commit a crime against the established government of the day.\n\nThe alleged contract could not be said to have been ratified by Government because the subsequent government was established by a proclamation in legal notice No.1 of 1986, which did not act retrospectively to legalize acts done by the Interim Government of NRM.\n\nThe contract was frustrated by impossibility of performance since by subsequently assuming power the then \"interim Government of NRM\" had now to act legally within the confines of the law; this thereby meant that the contract could not be performed as envisaged by the parties.",
+      "needs_review": false
+    }
+  ]
+}
