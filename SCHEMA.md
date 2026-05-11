@@ -28,8 +28,8 @@ This document specifies the structure of the cleaned Kampala Law Reports Subject
 
 | Field | Type | Notes |
 |-------|------|-------|
-| `parties_first` | string (nullable) | First party named in the case. For trial-court cases this is the plaintiff; for appellate cases this is the appellant. Null for non-adversarial cases. |
-| `parties_second` | string (nullable) | Second party named. For trial-court cases this is the defendant; for appellate cases this is the respondent. Null for non-adversarial cases. |
+| `parties_first` | string (nullable) | First party named in the case. For trial-court cases this is the plaintiff; for appellate cases this is the appellant. Null for non-adversarial cases. Preserve the source's original numbering (e.g., "1. Defendant A. 2. Defendant B."). |
+| `parties_second` | string (nullable) | Second party named. For trial-court cases this is the defendant; for appellate cases this is the respondent. Null for non-adversarial cases. Preserve the source's original numbering (e.g., "1. Defendant A. 2. Defendant B."). |
 | `case_type` | string | Controlled vocabulary: `vs` (adversarial), `in_the_matter` (begins "In the matter of…"), `other`. |
 
 ### Citation
@@ -38,7 +38,7 @@ This document specifies the structure of the cleaned Kampala Law Reports Subject
 |-------|------|-------|
 | `year_start` | integer | Earliest year of the case. For single-year cases, equals `year_end`. |
 | `year_end` | integer | Latest year. For ranges like "1990-91", `year_start=1990, year_end=1991`. |
-| `volume` | string | Roman numeral identifier (I, II, III, IV, V, VI). String because it identifies, not measures. |
+| `volume` | string | Roman numeral identifier (I, II, III, IV, V, VI). String because it identifies, not measures. A dash ("-") in the source means no volume was specified and is converted to null. |
 | `court` | string | Normalised court code (one of approximately 12–15 values). Original raw value preserved in audit sidecar. |
 | `page` | integer | Page reference within the volume. |
 
@@ -53,7 +53,7 @@ This document specifies the structure of the cleaned Kampala Law Reports Subject
 
 | Field | Type | Notes |
 |-------|------|-------|
-| `needs_review` | boolean | True for cases where automatic cleaning could not confidently extract all fields, indicating the row may benefit from manual inspection. |
+| `needs_review` | boolean | True for cases that may warrant user attention. Includes both cases where automatic cleaning was uncertain about field values, and cases with unusual structural features (e.g., multi-row case names, multi-party defendant or plaintiff lists) where cleaning succeeded but the source pattern is atypical. |
 
 ## Audit sidecar: `klr_subject_index_review.csv`
 
@@ -80,3 +80,4 @@ Decisions made during schema design, recorded for future reference:
 - **`case_type` retained as explicit field** rather than derived from null patterns. Supports direct querying ("show me all `in_the_matter` cases") without forcing users to infer from null patterns.
 - **Audit fields in sidecar** (`klr_subject_index_review.csv`) rather than main dataset. Keeps the published dataset clean for general use; verification fields are available via join for those who need them.
 - **`needs_review` retained in main dataset** despite being audit-shaped. Quality control is a common user use case, not just an auditor concern, so the flag earns its place in the main dataset.
+- **Multi-party cases** as strings, not arrays or separate tables. Source numbering (1. ... 2. ...) is preserved as part of the string. Users who need individual parties can split on the numbering pattern. Rare enough in the dataset that schema complexity isn't warranted.
