@@ -2,6 +2,22 @@
   "fixture": "admin_law_sample",
   "cases": [
     {
+      "case_id": "klr_0001",
+      "category": "Administrative Law",
+      "case_name": "Works Ltd Vs. 1.Departed Asians Property Custodian Board. 2. National Resistance Movement Secretariat.",
+      "parties_first": "Works Ltd",
+      "parties_second": "1.Departed Asians Property Custodian Board. 2. National Resistance Movement Secretariat",
+      "case_type": "vs",
+      "year_start": 1990,
+      "year_end": 1991,
+      "volume": null,
+      "court": "HCCS",
+      "page": 38,
+      "issue": "Whether NRM secretariat is a legal entity that can sue and be sued on its own.",
+      "holding": "Held: The NRM secretariat does not have an independent existence on its own because it gets its vote from Government and was therefore an arm of Government like the Resistance Councils. The proper 2nd defendant would have been the Attorney General.\n\nNo injunction can issue against Government.\n\nSince there was another similar suit pending before the Magistrates' court, the suit filed later in the High Court would be stayed.",
+      "needs_review": true
+    },
+    {
       "case_id": "klr_0002",
       "category": "Administrative Law",
       "case_name": "Wyclief Kiggundu Kato Vs. Attorney General.",
